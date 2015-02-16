@@ -41,17 +41,40 @@
               <button type="button" class="btn btn-default" data-command-name="italic"><i class="fa fa-italic"></i></button>
               <button type="button" class="btn btn-default" data-command-name="underline"><i class="fa fa-underline"></i></button>
               <button type="button" class="btn btn-default" data-command-name="linkPrompt"><i class="fa fa-link"></i></button>
-              <button type="button" class="btn btn-default" data-command-name="h3"><i class="fa fa-header"></i></button>
+              <button type="button" class="btn btn-default" data-command-name="h2"><i class="fa fa-header"></i></button>
               <button type="button" class="btn btn-default" data-command-name="blockquote"><i class="fa fa-quote-right"></i></button>
               <button type="button" class="btn btn-default" data-command-name="insertOrderedList"><i class="fa fa-list-ol"></i></button>
               <button type="button" class="btn btn-default" data-command-name="insertUnorderedList"><i class="fa fa-list-ul"></i></button>
 
             </div>
-            <div class='scribe'>
-              Looking for food? Look no further, A la Carte has it all. Our online shop provides the full catalog: Chocolate, coffee, wine, recipes and everything else. We offer free shipping as well as all major payment options. Be sure to sign up for our newsletter to get the latest news and special deals right into your inbox!
-            </div>
+            <div class='scribe'></div>
 
             <button type="button" class="btn btn-success" onclick="console.log(scribe.getHTML())">Log to HTML</button>
+
+            <hr />
+            <i>100Kb minified</i>
+            <table class="table table-bordered">
+              <tr>
+                <th class="success">Pros</td>
+                <th class="danger">Cons</td>
+              </tr>
+              <tr>
+                <td>Everything is a plugin</td>
+                <td>Just stores HTML</td>
+              </tr>
+              <tr>
+                <td>Backed by The Guardian</td>
+                <td>Adjustments for <pre>p, br, ...</pre> may be needed</td>
+              </tr>
+              <tr>
+                <td>Very customizable</td>
+                <td>Bundles parts of lodash, needs custom build process to avoid dups</td>
+              </tr>
+              <tr>
+                <td>Basic functions already exist (as plugins)</td>
+                <td></td>
+              </tr>
+            </table>
 
             <div class="footer">
                 <p>♥ from the Yeoman team</p>

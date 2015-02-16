@@ -7,7 +7,6 @@ require.config({
         'scribe-plugin-blockquote-command': '../bower_components/scribe-plugin-blockquote-command/scribe-plugin-blockquote-command',
         'scribe-plugin-smart-lists': '../bower_components/scribe-plugin-smart-lists/scribe-plugin-smart-lists',
         'scribe-plugin-link-prompt-command': '../bower_components/scribe-plugin-link-prompt-command/scribe-plugin-link-prompt-command',
-        'scribe-plugin-sanitizer': '../bower_components/scribe-plugin-sanitizer/scribe-plugin-sanitizer',
         'scribe-plugin-keyboard-shortcuts': '../bower_components/scribe-plugin-keyboard-shortcuts/scribe-plugin-keyboard-shortcuts',
         'scribe-plugin-intelligent-unlink-command': '../bower_components/scribe-plugin-intelligent-unlink-command/scribe-plugin-intelligent-unlink-command',
         bootstrapAffix: '../bower_components/bootstrap/js/affix',
@@ -72,9 +71,8 @@ require([
     'scribe-plugin-smart-lists',
     'scribe-plugin-link-prompt-command',
     'scribe-plugin-intelligent-unlink-command',
-    'scribe-plugin-keyboard-shortcuts',
-    'scribe-plugin-sanitizer'
-], function ($, Scribe, scribePluginToolbar, scribePluginHeading, scribePluginBlockquote, scribePluginSmartLists, scribePluginLinkPromptCommand, scribePluginIntelligentUnlinkCommand, scribePluginKeyboardShortcuts, scribePluginSanitizer) {
+    'scribe-plugin-keyboard-shortcuts'
+], function ($, Scribe, scribePluginToolbar, scribePluginHeading, scribePluginBlockquote, scribePluginSmartLists, scribePluginLinkPromptCommand, scribePluginIntelligentUnlinkCommand, scribePluginKeyboardShortcuts) {
     'use strict';
 
     /**
@@ -104,29 +102,11 @@ require([
     // To log scribe's content to the console (just for debugging purposes)
     window.scribe = scribe;
     // Formatters
-    scribe.use(scribePluginSanitizer({
-        tags: {
-            p: {},
-            br: {},
-            b: {},
-            strong: {},
-            i: {},
-            strike: {},
-            blockquote: {},
-            code: {},
-            ol: {},
-            ul: {},
-            li: {},
-            a: { href: true },
-            h2: {},
-            u: {}
-        }
-    }));
 
     // Use some plugins
     var toolbarElement = document.querySelector('.toolbar');
     scribe.use(scribePluginToolbar(toolbarElement));
-    scribe.use(scribePluginHeading(3));
+    scribe.use(scribePluginHeading(2));
     scribe.use(scribePluginBlockquote());
     scribe.use(scribePluginSmartLists());
     scribe.use(scribePluginLinkPromptCommand());

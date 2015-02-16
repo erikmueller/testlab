@@ -5,7 +5,17 @@
     "bootstrap": "~3.0.3",
     "modernizr": "~2.6.2",
     "requirejs": "~2.1.8",
-    "jquery": "~1.10.2"
+    "jquery": "~1.10.2",
+    "font-awesome": "~4.3.0",
+    "scribe": "~1.2.7",
+    "scribe-plugin-blockquote-command": "~0.1.0",
+    "scribe-plugin-heading-command": "~0.1.0",
+    "scribe-plugin-intelligent-unlink-command": "~0.1.6",
+    "scribe-plugin-keyboard-shortcuts": "~0.1.1",
+    "scribe-plugin-link-prompt-command": "~0.1.2",
+    "scribe-plugin-sanitizer": "~0.1.7",
+    "scribe-plugin-smart-lists": "~0.1.7",
+    "scribe-plugin-toolbar": "~0.1.4"
   },
   "devDependencies": {}
 }
